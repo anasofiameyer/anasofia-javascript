@@ -47,6 +47,7 @@ console.log(k);
 
 console.log("Working with strings")
 let firstName = 'Ana Sofia';
+let middleName = ''
 let lastName = 'Meyer';
 
 let name = firstName + ' ' + lastName;
@@ -57,8 +58,37 @@ let greeting = 'My name is' + ' ' + name;
 
 console.log(greeting);
 
+console.log("Using functions:");
 
-// Add a JavaScript comment with the text “Strings on my own”. Create a new variable, greeting, and in it, join the string 'My name is' together with name so its new value is My name is YOUR NAME. Log that new value to the console. Commit your changes to git so we have a record. 
+// function to make square numbers
+function makeSquare(theNumb) {
+let squared = theNumb * theNumb;
+return squared;
+}
+
+let try01 = makeSquare(3);
+console.log(try01);
+
+let try02 = makeSquare(16);
+console.log(try02);
+
+let try03 = makeSquare(14);
+console.log(try03);
+
+// functions on my own
+function makeName(firstName, middleName, lastName) {
+let fullName = firstName + ' ' + middleName + ' ' + lastName;
+return fullName;
+}
+
+let name01 = makeName("Robert \"Beto\" O'Rourke");
+console.log(name01);
+
+let name02 = makeName("Alexander The Great");
+console.log(name02);
+
+let name03 = makeName("Greg \"Governor Hot Wheels\" Abbott")
+console.log(name03)
 
   </script>
 </body>
