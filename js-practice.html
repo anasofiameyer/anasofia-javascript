@@ -77,7 +77,7 @@ console.log(try03);
 
 // functions on my own
 function makeName(firstName, middleName, lastName) {
-let fullName = firstName + ' ' + middleName + ' ' + lastName;
+let fullName = firstName + " " + middleName + " " + lastName;
 return fullName;
 }
 
@@ -87,8 +87,39 @@ console.log(name01);
 let name02 = makeName("Alexander The Great");
 console.log(name02);
 
-let name03 = makeName("Greg \"Governor Hot Wheels\" Abbott")
-console.log(name03)
+let name03 = makeName("Greg \"Governor Hot Wheels\" Abbott");
+console.log(name03);
+
+// Just a log to show in our Console
+console.log("Making a better name function:");
+
+// A better name function to fix middle initials
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length === 1) {
+    middleName = middleName + ".";
+  }
+  let fullName = firstName + " " + middleName + " " + lastName;
+  return fullName;
+}
+
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+console.log(makeBetterName("John", "F", "Kennedy"));
+
+// using if and if else
+console.log("scoreCompare function");
+  function scoreCompare(home, away) {
+    if (home > away) {
+      return "Home team wins!";
+    } else if (home = away) {
+      return "It was a tie";
+    } else { 
+      return "Away team wins :(";
+    }
+    
+  }
+  console.log(scoreCompare(5,3));
+  console.log(scoreCompare(3,5));
+  console.log(scoreCompare(6,6));
 
   </script>
 </body>
