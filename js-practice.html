@@ -81,13 +81,13 @@ let fullName = firstName + " " + middleName + " " + lastName;
 return fullName;
 }
 
-let name01 = makeName("Robert \"Beto\" O'Rourke");
+let name01 = makeName("Robert", "\"Beto\"", "O'Rourke");
 console.log(name01);
 
-let name02 = makeName("Alexander The Great");
+let name02 = makeName("Alexander", "The", "Great");
 console.log(name02);
 
-let name03 = makeName("Greg \"Governor Hot Wheels\" Abbott");
+let name03 = makeName("Greg", "\"Governor Hot Wheels\"", "Abbott");
 console.log(name03);
 
 // Just a log to show in our Console
@@ -110,7 +110,7 @@ console.log("scoreCompare function");
   function scoreCompare(home, away) {
     if (home > away) {
       return "Home team wins!";
-    } else if (home = away) {
+    } else if (home === away) {
       return "It was a tie";
     } else { 
       return "Away team wins :(";
@@ -120,6 +120,7 @@ console.log("scoreCompare function");
   console.log(scoreCompare(5,3));
   console.log(scoreCompare(3,5));
   console.log(scoreCompare(6,6));
+
 
   </script>
 </body>
